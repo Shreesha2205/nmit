@@ -55,6 +55,8 @@ button{
 	display: block;
 	color: #fff;
 	background: #4487c1;
+
+
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 30px;
@@ -76,6 +78,7 @@ button:hover{
 }
 .login label{
 	color: #3b588a;
+
 	transform: scale(.6);
 }
 
@@ -92,8 +95,11 @@ button:hover{
   color: #cdcdd7;
   background-color: #38729e;
 
+ 
+
 }
 form{
 	height:auto;
 	margin : auto;
 }
+
