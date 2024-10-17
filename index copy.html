@@ -9,37 +9,30 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="light-theme">
-    <div class="ui-switch-container">
-    <label class="ui-switch">
-        <input type="checkbox" id="theme-toggle">
-        <div class="slider">
-            <div class="circle"></div>
-        </div>
-    </label></div>
+<body class="light-theme " >
     <header>
         <div class="container">
-            <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <button class="nav-button">
+            <nav class="navbar"> 
+            <div class="nav-container">
+            
+                <div class="nav-left">
+                <button class="nav-button findr">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="8"/>
                         <path d="M21 21l-4.35-4.35"/>
                     </svg>
                     <span>Find a ride</span>
                 </button>
-                <button class="nav-button">
+                <button class="nav-button trip">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 5v14M5 12h14"/>
                     </svg>
                     <span>Post a trip</span>
                 </button>
-            </div>
-
-            <a href="/" class="logo">JUSTFORFUNBABY</a>
-
+                </div>
+            <div  class="logo">JUSTFORFUNBABY</div>
             <div class="nav-right">
+                <div class="hiw">
                 <button class="nav-button">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"/>
@@ -48,11 +41,13 @@
                     </svg>
                     <span>How it works</span>
                 </button>
+                </div>
+                <div class="si">
                 <button class="nav-button">
                     <span>Sign in</span>
                 </button>
+                </div>
             </div>
-
             <button class="mobile-menu-btn">
                 <div class="hamburger">
                     <span></span>
@@ -61,7 +56,6 @@
                 </div>
             </button>
         </div>
-
         <div class="mobile-menu">
             <button>Find a ride</button>
             <button>Post a trip</button>
@@ -70,9 +64,9 @@
         </div>
         </div>
     </header>
-    <section class="hero-section">
+    <section class="hero-section ">
         <div class="container mx-auto px-4 py-16 relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold text-white text-center mb-8">
+            <h1 class="text-4xl md:text-6xl font-bold text-white text-center mb-8" style="color: white;">
                 Carpool to thousands of destinations at low prices
             </h1>
             
@@ -99,61 +93,67 @@
         </div>
         <div class="wave-shape"></div>
     </section>
-    <section id="achievements">
-        <div class="container">
-            <h2 class="section-title">Your Achievements</h2>
-            <div class="achievement-container">
-                <div class="achievement-card">
-                    <i class="fas fa-award"></i>
-                    <h3>Eco Warrior</h3>
-                    <p>You've saved 500kg of CO2 emissions!</p>
-                </div>
-                <div class="achievement-card">
-                    <i class="fas fa-road"></i>
-                    <h3>Distance Covered</h3>
-                    <p>You've carpooled for 1000km!</p>
-                </div>
-                <div class="achievement-card">
-                    <i class="fas fa-piggy-bank"></i>
-                    <h3>Money Saved</h3>
-                    <p>You've saved $500 through carpooling!</p>
-                </div>
+    <section id="achievements" class="centre">
+    <div class="container">
+        <h2 class="section-title">Your Achievements</h2>
+        <div class="achievement-container">
+            <div class="achievement-card">
+                <i class="fas fa-award"></i>
+                <h3 style="color: green;">Eco Warrior</h3>
+                <p>You've saved <span id="co2-saved">0</span> kg of CO2 emissions!</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-road"></i>
+                <h3 style="color: green;">Distance Covered</h3>
+                <p>You've carpooled for <span id="distance-covered">0</span> km!</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-piggy-bank"></i>
+                <h3 style="color: green;">Money Saved</h3>
+                <p>You've saved <span id="money-saved">0</span> INR through carpooling!</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="nearby-users">
-        <div class="container">
-            <h2 class="section-title">Nearby Carpoolers</h2>
-            <div class="user-container">
-                <div class="user-card">
-                    <i class="fas fa-user-circle"></i>
-                    <h3>John Doe</h3>
-                    <p>Usually starts from: Downtown</p>
-                </div>
-                <div class="user-card">
-                    <i class="fas fa-user-circle"></i>
-                    <h3>Jane Smith</h3>
-                    <p>Usually starts from: Suburb Area</p>
-                </div>
-                <div class="user-card">
-                    <i class="fas fa-user-circle"></i>
-                    <h3>Mike Johnson</h3>
-                    <p>Usually starts from: University Campus</p>
-                </div>
+
+    <section id="nearby-users" class="centre">
+    <div class="container">
+        <h2 class="section-title">Nearby Carpoolers</h2>
+        <div class="user-container">
+            <div class="user-card">
+                <i class="fas fa-user-circle"></i>
+                <h3>John Doe</h3>
+                <p>Usually starts from: Downtown</p>
+                <p>CO2 Emissions Saved: <span id="co2-john">0 kg</span></p>
+                <p>Distance Covered: <span id="distance-john">0 km</span></p>
+                <p>Money Saved: <span id="money-john">0 INR</span></p>
+            </div>
+            <div class="user-card">
+                <i class="fas fa-user-circle"></i>
+                <h3>Jane Smith</h3>
+                <p>Usually starts from: Suburb Area</p>
+                <p>CO2 Emissions Saved: <span id="co2-jane">0 kg</span></p>
+                <p>Distance Covered: <span id="distance-jane">0 km</span></p>
+                <p>Money Saved: <span id="money-jane">0 INR</span></p>
+            </div>
+            <div class="user-card">
+                <i class="fas fa-user-circle"></i>
+                <h3>Mike Johnson</h3>
+                <p>Usually starts from: University Campus</p>
+                <p>CO2 Emissions Saved: <span id="co2-mike">0 kg</span></p>
+                <p>Distance Covered: <span id="distance-mike">0 km</span></p>
+                <p>Money Saved: <span id="money-mike">0 INR</span></p>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <nav class="sticky-bottom-nav">
         <button class="icon-button">
             <i class="fas fa-search"></i> Find
         </button>
         <button class="icon-button">
             <i class="fas fa-plus-circle"></i> Offer
-        </button>
-        <button class="icon-button">
-            <i class="fas fa-trophy"></i> Achievements
         </button>
         <button class="icon-button">
             <i class="fas fa-user"></i> Account
@@ -163,5 +163,19 @@
         </button>
     </nav>
 <script src="java.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const response = await fetch('/api/achievements');
+      const data = await response.json();
+
+      document.querySelector('.achievement-card:nth-child(1) p').textContent = `You've saved ${data.co2_emissions}kg of CO2 emissions!`;
+      document.querySelector('.achievement-card:nth-child(2) p').textContent = `You've carpooled for ${data.distance_covered}km!`;
+      document.querySelector('.achievement-card:nth-child(3) p').textContent = `You've saved $${data.money_saved} through carpooling!`;
+    } catch (error) {
+      console.error('Error fetching achievements:', error);
+    }
+  });
+</script>
 </body>
 </html>
