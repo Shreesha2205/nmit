@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideShare - Carpool to thousands of destinations at low prices</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <div class="ui-switch-container">
+    <label class="ui-switch">
+        <input type="checkbox" id="theme-toggle">
+        <div class="slider">
+            <div class="circle"></div>
+        </div>
+    </label></div>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="nav-button">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    <span>Find a ride</span>
+                </button>
+                <button class="nav-button">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                    <span>Post a trip</span>
+                </button>
+            </div>
+
+            <a href="/" class="logo">JUSTFORFUNBABY</a>
+
+            <div class="nav-right">
+                <button class="nav-button">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                        <path d="M12 17h.01"/>
+                    </svg>
+                    <span>How it works</span>
+                </button>
+                <button class="nav-button">
+                    <span>Sign in</span>
+                </button>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+
+        <div class="mobile-menu">
+            <button>Find a ride</button>
+            <button>Post a trip</button>
+            <button>How it works</button>
+            <button>Sign in</button>
+        </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="container mx-auto px-4 py-16 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold text-white text-center mb-8">
+                Carpool to thousands of destinations at low prices
+            </h1>
+            
+            <!-- Search Box -->
+            <div class="search-box">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="relative">
+                        <label class="block text-sm font-medium text-gray-700">Leaving from</label>
+                        <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Enter city">
+                    </div>
+                    <div class="relative">
+                        <label class="block text-sm font-medium text-gray-700">Going to</label>
+                        <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Enter city">
+                    </div>
+                    <div class="relative">
+                        <label class="block text-sm font-medium text-gray-700">Date</label>
+                        <input type="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                    </div>
+                </div>
+                <button class="mt-4 w-full bg-blue-500 text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors">
+                    Search
+                </button>
+            </div>
+        </div>
+        <div class="wave-shape"></div>
+    </section>
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title">Your Achievements</h2>
+            <div class="achievement-container">
+                <div class="achievement-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Eco Warrior</h3>
+                    <p>You've saved 500kg of CO2 emissions!</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-road"></i>
+                    <h3>Distance Covered</h3>
+                    <p>You've carpooled for 1000km!</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>Money Saved</h3>
+                    <p>You've saved $500 through carpooling!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nearby-users">
+        <div class="container">
+            <h2 class="section-title">Nearby Carpoolers</h2>
+            <div class="user-container">
+                <div class="user-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>John Doe</h3>
+                    <p>Usually starts from: Downtown</p>
+                </div>
+                <div class="user-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Jane Smith</h3>
+                    <p>Usually starts from: Suburb Area</p>
+                </div>
+                <div class="user-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Mike Johnson</h3>
+                    <p>Usually starts from: University Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="sticky-bottom-nav">
+        <button class="icon-button">
+            <i class="fas fa-search"></i> Find
+        </button>
+        <button class="icon-button">
+            <i class="fas fa-plus-circle"></i> Offer
+        </button>
+        <button class="icon-button">
+            <i class="fas fa-trophy"></i> Achievements
+        </button>
+        <button class="icon-button">
+            <i class="fas fa-user"></i> Account
+        </button>
+        <button class="icon-button">
+            <i class="fas fa-cog"></i> Settings
+        </button>
+    </nav>
+<script src="java.js"></script>
+</body>
+</html>
